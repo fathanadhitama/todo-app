@@ -1,0 +1,115 @@
+:root{
+    --form-color: rebeccapurple;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.todoForm{
+    color: white;
+    padding: 10px;
+    width: 400px;
+}
+
+.radios{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input[type="text"]{
+    border: 1px solid black;
+    background-color: rgba(50, 49, 49, 0.99);
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 70%;
+}
+
+input[type="text"]:focus{
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.589);
+}
+
+.option{
+    transition: 200ms;
+    cursor: pointer;
+}
+
+
+label{cursor: pointer;}
+
+button{
+    padding: 15px;
+    background-color: azure;
+    border-radius: 30px;
+    cursor:pointer;
+}
+
+button:disabled{
+    background-color: rgb(144, 148, 148);
+}
+
+input[type="radio"]{
+    appearance: none;
+	-webkit-appearance: none;
+    display: none;
+}
+
+.option label {
+	display: block;
+	padding: 10px 10px 10px 30px;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 18px;
+	position: relative;
+	transition: 0.4s ease-in-out 0s;
+}
+
+.option label:hover{
+    background: #393969b8;
+}
+
+.option input[type="radio"]:checked ~ label{
+    background: #1d1d42;
+}
+
+.option label:before,
+.option label:after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.option label:before {
+	background: #524eee;
+    left: 9.5px;
+    top: 15px;
+	transform: scale(0);
+	opacity: 0;
+    transition: 300ms;
+}
+
+.option label:after {
+	border: 2px solid white;
+    width: 14px;
+    height: 14px;
+    left: 8px;
+    top: 14px;
+}
+
+.option input[type="radio"]:checked ~ label::before{
+    transform: scale(0.6);
+    opacity: 1;
+}

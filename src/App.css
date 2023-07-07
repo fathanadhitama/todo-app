@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+*{
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #284b63;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+TodoList{
+    width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-app{
+    background-color: transparent;
+    width: 500px;
+    height: 95vh;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 30px 3px black;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+    color:white;
+    margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-row{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
+
+.critical{
+    background-color: red;
+}
+
+.normal{
+    background-color: gray;
+}
+
+.info{
+    background: green;
+}
+
+.icons{
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.delete-icon{
+    margin: 0px 5px;
+}
+.edit-icon{
+    margin: 0px 5px;
+}
+
+.date{font-size: 11px;}

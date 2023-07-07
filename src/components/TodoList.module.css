@@ -1,0 +1,14 @@
+.todoWrapper{
+    overflow: auto;
+    max-height: 65vh;
+}
+
+.todoWrapper::-webkit-scrollbar{
+    width: 5px;
+}
+
+.todoWrapper::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 20px;
+    border: 0px;
+}
