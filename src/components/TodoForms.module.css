@@ -50,13 +50,18 @@ label{cursor: pointer;}
 
 button{
     padding: 15px;
-    background-color: azure;
     border-radius: 30px;
     cursor:pointer;
+    border: none;
+    transition: 200ms ease-in-out;
 }
 
 button:disabled{
     background-color: rgb(144, 148, 148);
+}
+
+button:hover{
+    background-color: rgb(233, 224, 224);
 }
 
 input[type="radio"]{
